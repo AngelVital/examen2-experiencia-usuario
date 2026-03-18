@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artículo | 1888 - UABCS</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Header Navigation -->
+    <header>
+        <div class="nav-left">
+            <button class="menu-btn" onclick="toggleMenu()">
+                <i class="fas fa-bars fa-lg"></i> Menú
+            </button>
+            <div class="nav-items">
+                <a href="index.html#aspirantes">Aspirantes</a>
+                <a href="index.html#comunidad">Comunidad</a>
+            </div>
+        </div>
+
+        <div class="logos">
+            <a href="index.html">
+                <img src="img/logo.jfif" alt="UABCS Logo"
+                    onerror="this.src='https://placehold.co/180x60/003865/F2A900?text=UABCS'">
+            </a>
+        </div>
+
+        <div class="nav-right nav-items">
+            <a href="index.html#servicios">Servicios y Trámites</a>
+            <a href="index.html#universidad">Nuestra Universidad</a>
+        </div>
+    </header>
+
+    <!-- Sidebar Menu (Based on Diagram Structure) -->
+    <div class="menu-backdrop" onclick="toggleMenu()"></div>
+    <div class="menu-overlay" id="sidebarMenu">
+        <button class="close-menu" onclick="toggleMenu()"><i class="fas fa-times"></i></button>
+
+        <h2
+            style="font-size: 2rem; color: var(--uabcs-blue); margin-bottom: 2rem; border-bottom: 3px solid var(--uabcs-gold); padding-bottom: 0.5rem; display: inline-block;">
+            UABCS</h2>
+
+        <div class="menu-category">
+            <div class="category-title cat-aspirantes"><i class="fas fa-user-graduate"></i> Aspirantes</div>
+            <ul class="menu-list">
+                <li><a href="#"><i class="fas fa-circle"></i> Oferta educativa</a></li>
+                <li><a href="#"><i class="fas fa-circle"></i> Proceso de admisión</a></li>
+            </ul>
+        </div>
+        <div class="menu-category">
+            <div class="category-title cat-comunidad"><i class="fas fa-users"></i> Comunidad</div>
+            <ul class="menu-list">
+                <li><a href="#"><i class="fas fa-circle"></i> Becas</a></li>
+                <li><a href="#"><i class="fas fa-circle"></i> Calendario</a></li>
+                <li><a href="#"><i class="fas fa-circle"></i> Convocatorias</a></li>
+                <li><a href="#"><i class="fas fa-circle"></i> Servicio social</a></li>
+                <li><a href="#"><i class="fas fa-circle"></i> Movilidad estudiantil</a></li>
+            </ul>
+        </div>
+        <div class="menu-category">
+            <div class="category-title cat-servicios"><i class="fas fa-laptop-code"></i> Servicios y Trámites</div>
+            <ul class="menu-list">
+                <li><a href="#"><i class="fas fa-circle"></i> Portal SIIA</a></li>
+                <li><a href="#"><i class="fas fa-circle"></i> Biblioteca</a></li>
+                <li><a href="#"><i class="fas fa-circle"></i> Campus virtual</a></li>
+                <li><a href="#"><i class="fas fa-circle"></i> Reinscripciones</a></li>
+                <li><a href="#"><i class="fas fa-circle"></i> Fichas de aportaciones</a></li>
+                <li><a href="#"><i class="fas fa-circle"></i> Trámites de egreso</a></li>
+            </ul>
+        </div>
+        <div class="menu-category">
+            <div class="category-title cat-universidad"><i class="fas fa-landmark"></i> Nuestra Universidad</div>
+            <ul class="menu-list">
+                <li><a href="#"><i class="fas fa-circle"></i> Noticias</a></li>
+                <li><a href="#"><i class="fas fa-circle"></i> Directorio</a></li>
+                <li><a href="#"><i class="fas fa-circle"></i> Transparencia</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Article Content -->
+    <main class="article-main">
+        <div class="article-hero">
+            <div class="article-content">
+                <div class="article-category">Institucional</div>
+                <h1 class="article-title">UABCS publicará este viernes 20 de marzo su convocatoria de admisión</h1>
+                <div class="article-meta">
+                    <span>18 Marzo 2026</span>
+                    <a href="#" class="link-icon" title="Copiar enlace"><i class="fas fa-link"></i></a>
+                </div>
+            </div>
+
+            <div class="article-image-box">
+                <!-- Image cropped with the smooth CSS radius from reference -->
+                <img src="https://images.unsplash.com/photo-1541339907198-e08756dedf3f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                    alt="Estudiantes en el campus" class="article-image">
+            </div>
+        </div>
+
+        <div class="article-body">
+            <p>La Universidad Autónoma de Baja California Sur (UABCS) informa que el próximo 20 de marzo será publicada
+                su convocatoria de admisión a nuevo ingreso para programas de licenciatura y posgrado, correspondiente
+                al próximo ciclo escolar.</p>
+
+            <p>La convocatoria estará disponible en el portal web oficial de la universidad, www.uabcs.mx, donde las y
+                los aspirantes podrán consultar a detalle los requisitos de ingreso, fechas de cada etapa del proceso,
+                así como la oferta académica disponible, entre otros pormenores. Todo el proceso de admisión se
+                realizará en línea, con el propósito de facilitar la participación de aspirantes tanto de Baja
+                California Sur como de otras entidades del país.</p>
+
+            <p>En ella, se indicarán fechas límite para la solicitud del examen, los costos, el sistema de evaluación
+                aplicado y los plazos para el curso propedéutico.</p>
+        </div>
+    </main>
+
+    <!-- Accessibility Button -->
+    <button class="action-button accessibility-button" title="Herramientas de Accesibilidad">
+        <i class="fas fa-universal-access"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

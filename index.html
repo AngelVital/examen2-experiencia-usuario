@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UABCS - Universidad Autónoma de Baja California Sur</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- Header Navigation -->
+    <header>
+        <div class="nav-left">
+            <button class="menu-btn" onclick="toggleMenu()">
+                <i class="fas fa-bars fa-lg"></i> Menú
+            </button>
+            <div class="nav-items">
+                <a href="#aspirantes">Aspirantes</a>
+                <a href="#comunidad">Comunidad</a>
+            </div>
+        </div>
+
+        <div class="logos">
+            <img src="img/logo.jfif" alt="UABCS Logo"
+                onerror="this.src='https://placehold.co/180x60/003865/F2A900?text=UABCS'">
+        </div>
+
+        <div class="nav-right nav-items">
+            <a href="#servicios">Servicios y Trámites</a>
+            <a href="#universidad">Nuestra Universidad</a>
+        </div>
+    </header>
+
+    <!-- Sidebar Menu (Based on Diagram Structure) -->
+    <div class="menu-backdrop" onclick="toggleMenu()"></div>
+    <div class="menu-overlay" id="sidebarMenu">
+        <button class="close-menu" onclick="toggleMenu()"><i class="fas fa-times"></i></button>
+
+        <h2
+            style="font-size: 2rem; color: var(--uabcs-blue); margin-bottom: 2rem; border-bottom: 3px solid var(--uabcs-gold); padding-bottom: 0.5rem; display: inline-block;">
+            UABCS</h2>
+
+        <div class="menu-category">
+            <div class="category-title cat-aspirantes">
+                <i class="fas fa-user-graduate"></i> Aspirantes
+            </div>
+            <ul class="menu-list">
+                <li><a href="#"><i class="fas fa-circle"></i> Oferta educativa</a></li>
+                <li><a href="#"><i class="fas fa-circle"></i> Proceso de admisión</a></li>
+            </ul>
+        </div>
+
+        <div class="menu-category">
+            <div class="category-title cat-comunidad">
+                <i class="fas fa-users"></i> Comunidad
+            </div>
+            <ul class="menu-list">
+                <li><a href="#"><i class="fas fa-circle"></i> Becas</a></li>
+                <li><a href="#"><i class="fas fa-circle"></i> Calendario</a></li>
+                <li><a href="#"><i class="fas fa-circle"></i> Convocatorias</a></li>
+                <li><a href="#"><i class="fas fa-circle"></i> Servicio social</a></li>
+                <li><a href="#"><i class="fas fa-circle"></i> Movilidad estudiantil</a></li>
+            </ul>
+        </div>
+
+        <div class="menu-category">
+            <div class="category-title cat-servicios">
+                <i class="fas fa-laptop-code"></i> Servicios y Trámites
+            </div>
+            <ul class="menu-list">
+                <li><a href="#"><i class="fas fa-circle"></i> Portal SIIA</a></li>
+                <li><a href="#"><i class="fas fa-circle"></i> Biblioteca</a></li>
+                <li><a href="#"><i class="fas fa-circle"></i> Campus virtual</a></li>
+                <li><a href="#"><i class="fas fa-circle"></i> Reinscripciones</a></li>
+                <li><a href="#"><i class="fas fa-circle"></i> Fichas de aportaciones</a></li>
+                <li><a href="#"><i class="fas fa-circle"></i> Trámites de egreso</a></li>
+            </ul>
+        </div>
+
+        <div class="menu-category">
+            <div class="category-title cat-universidad">
+                <i class="fas fa-landmark"></i> Nuestra Universidad
+            </div>
+            <ul class="menu-list">
+                <li><a href="#"><i class="fas fa-circle"></i> Noticias</a></li>
+                <li><a href="#"><i class="fas fa-circle"></i> Directorio</a></li>
+                <li><a href="#"><i class="fas fa-circle"></i> Transparencia</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <main class="hero">
+        <div class="hero-decoration-left"></div>
+        <div class="hero-decoration-right"></div>
+        <div class="swoosh-bottom"></div>
+
+        <div class="hero-nav">
+            <button class="nav-arrow"><i class="fas fa-chevron-left"></i></button>
+            <button class="nav-arrow"><i class="fas fa-chevron-right"></i></button>
+        </div>
+
+        <div class="hero-content">
+            <h1 class="hero-title">¡Publicación de la convocatoria<br>de nuevo ingreso!</h1>
+            <div class="hero-subtitle">2026-II</div>
+            <div class="hero-date">
+                <span class="hero-date-arrow">▷</span>
+                20 DE MARZO
+                <span class="hero-date-arrow">◁</span>
+            </div>
+        </div>
+
+        <!-- Using a reliable Unsplash image with clip-path -->
+        <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+            alt="Estudiantes UABCS" class="hero-students"
+            style="clip-path: polygon(15% 0, 100% 0, 100% 100%, 0 100%); object-fit: cover; width: 450px;">
+
+
+
+        <!-- Accessibility Button -->
+        <button class="action-button accessibility-button" title="Herramientas de Accesibilidad">
+            <i class="fas fa-universal-access"></i>
+        </button>
+    </main>
+
+    <!-- News Section -->
+    <section class="news-section">
+        <div class="section-header">
+            <h2 class="section-title">Acontecer Universitario</h2>
+        </div>
+
+        <div class="news-grid">
+            <!-- Card 1 -->
+            <article class="news-card">
+                <div class="news-image-wrapper">
+                    <img src="https://images.unsplash.com/photo-1541339907198-e08756dedf3f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                        alt="Estudiantes caminando en el campus" class="news-image">
+                </div>
+                <div class="news-content">
+                    <div class="news-date">2026-03-18</div>
+                    <a href="articulo.html" class="news-title">UABCS publicará este viernes 20 de marzo su convocatoria
+                        de
+                        admisión</a>
+                    <p class="news-excerpt">La Universidad Autónoma de Baja California Sur (UABCS) informa que el
+                        próximo... <a href="articulo.html" class="news-readmore">Leer más</a></p>
+                    <span class="news-category">Institucional</span>
+                </div>
+            </article>
+
+            <!-- Card 2 -->
+            <article class="news-card">
+                <div class="news-image-wrapper">
+                    <img src="https://images.unsplash.com/photo-1552422535-c45813c61732?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                        alt="Concierto de piano" class="news-image">
+                </div>
+                <div class="news-content">
+                    <div class="news-date">2026-03-18</div>
+                    <a href="articulo.html" class="news-title">Celebra la UABCS concierto "Los pianistas"</a>
+                    <p class="news-excerpt">La Universidad Autónoma de Baja California Sur (UABCS), como parte de sus
+                        festejos por el 50... <a href="articulo.html" class="news-readmore">Leer más</a></p>
+                    <span class="news-category">Arte y Cultura</span>
+                </div>
+            </article>
+
+            <!-- Card 3 -->
+            <article class="news-card">
+                <div class="news-image-wrapper">
+                    <img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                        alt="Congreso" class="news-image">
+                </div>
+                <div class="news-content">
+                    <div class="news-date">2026-03-17</div>
+                    <a href="articulo.html" class="news-title">Inscriben el nombre de la UABCS con letras doradas en el
+                        Muro de
+                        Honor del Congreso del Estado</a>
+                    <p class="news-excerpt">En una ceremonia solemne, la Universidad Autónoma de Baja California Sur
+                        (UABCS) fue reconoci... <a href="articulo.html" class="news-readmore">Leer más</a></p>
+                    <span class="news-category">Institucional</span>
+                </div>
+            </article>
+
+            <!-- Card 4 -->
+            <article class="news-card">
+                <div class="news-image-wrapper">
+                    <img src="https://images.unsplash.com/photo-1497633762265-9d179a990aa6?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                        alt="Acreditación" class="news-image">
+                </div>
+                <div class="news-content">
+                    <div class="news-date">2026-03-16</div>
+                    <a href="articulo.html" class="news-title">UABCS refrenda su acreditación institucional por parte de
+                        los
+                        CIEES</a>
+                    <p class="news-excerpt">• La entrega del reconocimiento se dio en el marco de la Primera Sesión
+                        Ord... <a href="articulo.html" class="news-readmore">Leer más</a></p>
+                    <span class="news-category">Institucional</span>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
