@@ -9,8 +9,6 @@ Puedes navegar por el proyecto haciendo clic en los siguientes enlaces locales:
 - [Ir a la Página Principal (Index)](index.html)
 - [Ir a la Vista de Noticia Detallada](articulo.html)
 
-*(Nota: Si activas GitHub Pages, estos enlaces te llevarán directamente a la versión en vivo de tu sitio).*
-
 ## ✨ Características Principales
 
 - **Responsivo:** Diseño completamente adaptativo que luce excelente tanto en navegadores de escritorio como en dispositivos móviles.
